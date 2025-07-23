@@ -17,6 +17,9 @@ section {
   margin: 120px 0;
 }
 
+.special-color {
+  color: rgb(233, 90, 8);
+}
 /* header part */
 .logo img {
   width: 135px;
@@ -56,9 +59,47 @@ nav {
   gap: 5px;
 }
 
+/* banner section */
+
+.banner {
+  display: flex;
+  align-items: center;
+}
+.banner-description,
+.banner-img {
+  width: 50%;
+}
+.banner-description h1 {
+  font-size: 2.8rem;
+}
+.banner-description p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
 /* ======> Responsive Design <======= */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .links .menu {
     display: none;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-description,
+  .banner-img {
+    width: 100%;
+    gap: 10px;
+  }
+}
+
+/* mid device */
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-description,
+  .banner-img {
+    width: 100%;
+    gap: 10px;
   }
 }
