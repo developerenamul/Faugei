@@ -226,6 +226,37 @@ button {
   height: 100%;
   cursor: pointer;
 }
+/* footer part */
+footer {
+  padding-bottom: 50px;
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.logo p {
+  color: grey;
+}
+.links-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.links-container .links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.links-container .links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: grey;
+}
+.social-links a img {
+  width: 35px;
+  margin-right: 15px;
+}
 /* ======> Responsive Design <======= */
 @media screen and (max-width: 600px) {
   .links .menu {
@@ -260,6 +291,13 @@ button {
   .subscription .contact {
     width: 80%;
   }
+  footer .container .footer-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .links-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* mid device */
@@ -281,5 +319,13 @@ button {
   }
   .plants-lover .brand {
     display: none;
+  }
+  .links-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }
