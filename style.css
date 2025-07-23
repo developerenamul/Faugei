@@ -110,6 +110,31 @@ nav {
   padding: 10px 15px;
   color: #fff;
 }
+/* Plants lover section */
+
+.plants-lover {
+  position: relative;
+  display: flex;
+  gap: 3.5rem;
+}
+.brand {
+  position: absolute;
+  top: -100px;
+  left: 150px;
+}
+.brand img {
+  width: 256px;
+}
+.plants-lover .lover-img,
+.lover-description {
+  /* width: 50%; */
+}
+.lover-description h1 {
+  font-size: 2rem;
+}
+.lover-description ul li {
+  margin: 20px 0;
+}
 /* ======> Responsive Design <======= */
 @media screen and (max-width: 600px) {
   .links .menu {
@@ -129,6 +154,12 @@ nav {
   .plants-description p {
     width: 100%;
   }
+  .plants-lover {
+    flex-direction: column;
+  }
+  .plants-lover .brand {
+    display: none;
+  }
 }
 
 /* mid device */
@@ -144,5 +175,11 @@ nav {
   }
   .plants-card {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .plants-lover {
+    flex-direction: column;
+  }
+  .plants-lover .brand {
+    display: none;
   }
 }
