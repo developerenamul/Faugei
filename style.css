@@ -190,6 +190,42 @@ nav {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./assets/deal-ana.png") center/cover no-repeat;
 }
+
+/* subscription section */
+.subscription {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/news-letter-bg.png") center/cover no-repeat;
+  padding: 7rem 0;
+}
+.subscription h1 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.subscription .contact {
+  width: 30%;
+  margin: 0 auto;
+  position: relative;
+}
+.subscription .contact input,
+button {
+  padding: 10px 15px;
+}
+.subscription input {
+  width: 100%;
+}
+.subscription button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgb(233, 90, 8);
+  border: none;
+  outline: none;
+  color: #fff;
+  height: 100%;
+  cursor: pointer;
+}
 /* ======> Responsive Design <======= */
 @media screen and (max-width: 600px) {
   .links .menu {
@@ -220,6 +256,9 @@ nav {
   }
   .deal-card2 {
     grid-column: span 1;
+  }
+  .subscription .contact {
+    width: 80%;
   }
 }
 
